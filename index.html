@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Strata by HTML5 UP</title>
+    <title>Portfolio</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -18,14 +18,30 @@
     <!-- Header -->
     <header id="header">
       <div class="inner">
-        <a href="#" class="image avatar"
-          ><img src="images/avatar.jpg" alt=""
-        /></a>
-        <h1>
-          <strong>I'm Jasmine</strong><br />
-          a Junior Web Developer<br />
-          crafted by <a href="http://html5up.net">HTML5 UP</a>.
-        </h1>
+        <a href="#" class="image avatar"><img src="/headshot.png" alt="" /></a>
+        <div>
+          <h1>
+            <strong>I'm Jasmine</strong><br />
+            a Junior Web Developer<br />
+            <ul id="contact-links" class="icons">
+              <li>
+                <a href="#" class="icon brands fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-github"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon solid fa-envelope"
+                  ><span class="label">Email</span></a
+                >
+              </li>
+            </ul>
+          </h1>
+        </div>
       </div>
     </header>
 
@@ -33,23 +49,22 @@
     <div id="main">
       <!-- One -->
       <section id="one">
-        <header class="major">
-          <h2>
-            Ipsum lorem dolor aliquam ante commodo<br />
-            magna sed accumsan arcu neque.
-          </h2>
-        </header>
-        <p>
-          Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi
-          lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis
-          tortor primis integer massa adipiscing id nisi accumsan pellentesque
-          commodo blandit enim arcu non at amet id arcu magna. Accumsan orci
-          faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque
-          cubilia.
-        </p>
-        <ul class="actions">
-          <li><a href="#" class="button">Learn More</a></li>
-        </ul>
+        <div class="transbox">
+          <header class="major">
+            <h2>About Me</h2>
+          </header>
+          <p id="about-me">
+            Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
+            nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
+            lobortis tortor primis integer massa adipiscing id nisi accumsan
+            pellentesque commodo blandit enim arcu non at amet id arcu magna.
+            Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate
+            lorem neque cubilia.
+          </p>
+          <ul class="actions">
+            <li><a href="#" class="button" id="learn-more">Learn More</a></li>
+          </ul>
+        </div>
       </section>
 
       <!-- Two -->
@@ -57,46 +72,44 @@
         <h2>Recent Work</h2>
         <div class="row">
           <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/01.jpg" class="image fit thumb"
-              ><img src="images/thumbs/01.jpg" alt=""
-            /></a>
-            <h3>Magna sed consequat tempus</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+            <a
+              href="https://j-elkins.github.io/etch-a-sketch/"
+              class="image fit thumb"
+              ><img src="/etchasketch.png" alt="screenshot of etch-a-sketch app"
+              height=300px" width="350px" /></a
+            >
+            <h3>Etch-A-Sketch</h3>
+            <p>Features multiple colors and rainbow mode</p>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/02.jpg" class="image fit thumb"
-              ><img src="images/thumbs/02.jpg" alt=""
-            /></a>
-            <h3>Ultricies lacinia interdum</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+            <a
+              href="https://j-elkins.github.io/book-library/"
+              class="image fit thumb"
+              ><img src="/booklibrary.png" alt="screenshot of book library app"
+              height=300px" width="350px" /></a
+            >
+            <h3>Book Library</h3>
+            <p>Saves books to local storage</p>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/03.jpg" class="image fit thumb"
-              ><img src="images/thumbs/03.jpg" alt=""
-            /></a>
-            <h3>Tortor metus commodo</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+            <a
+              href="https://j-elkins.github.io/rock-paper-scissors/"
+              class="image fit thumb"
+              ><img src="/rockpaperscissors.png" alt="screenshot of rock, paper,
+              scissors app" height=300px" width="350px" /></a
+            >
+            <h3>Rock, Paper, Scissors</h3>
+            <p>Play a game against the computer</p>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/04.jpg" class="image fit thumb"
-              ><img src="images/thumbs/04.jpg" alt=""
-            /></a>
-            <h3>Quam neque phasellus</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/05.jpg" class="image fit thumb"
-              ><img src="images/thumbs/05.jpg" alt=""
-            /></a>
-            <h3>Nunc enim commodo aliquet</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/06.jpg" class="image fit thumb"
-              ><img src="images/thumbs/06.jpg" alt=""
-            /></a>
-            <h3>Risus ornare lacinia</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+            <a
+              href="https://j-elkins.github.io/calculator/"
+              class="image fit thumb"
+              ><img src="/calculator.png" alt="screenshot of calculator app"
+              height=300px" width="350px" /></a
+            >
+            <h3>Calculator</h3>
+            <p>Simple calculator with 4 basic math functions</p>
           </article>
         </div>
         <ul class="actions">
@@ -107,11 +120,6 @@
       <!-- Three -->
       <section id="three">
         <h2>Get In Touch</h2>
-        <p>
-          Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-          magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-          vulputate lorem neque lorem ipsum dolor.
-        </p>
         <div class="row">
           <div class="col-8 col-12-small">
             <form method="post" action="#">
@@ -147,21 +155,14 @@
                 <h3 class="icon solid fa-home">
                   <span class="label">Address</span>
                 </h3>
-                1234 Somewhere Rd.<br />
-                Nashville, TN 00000<br />
+                New York, NY<br />
                 United States
-              </li>
-              <li>
-                <h3 class="icon solid fa-mobile-alt">
-                  <span class="label">Phone</span>
-                </h3>
-                000-000-0000
               </li>
               <li>
                 <h3 class="icon solid fa-envelope">
                   <span class="label">Email</span>
                 </h3>
-                <a href="#">hello@untitled.tld</a>
+                <a href="#">jasmine.elkins@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -498,11 +499,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
           <li>
             <a href="#" class="icon brands fa-github"
               ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-dribbble"
-              ><span class="label">Dribbble</span></a
             >
           </li>
           <li>
