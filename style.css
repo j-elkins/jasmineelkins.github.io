@@ -1,0 +1,486 @@
+/* GENERAL ------------------------------------ */
+body {
+  display: flex;
+  background: rgb(249, 227, 204);
+  margin: 0;
+  color: #333;
+  font-family: "Gruppo", Calibri, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  padding: 30px;
+}
+
+button {
+  padding: 20px 30px;
+  border: 3px solid rgb(244, 234, 219);
+  border-radius: 11px;
+  font-family: "Gruppo", Calibri, sans-serif;
+  background: rgb(240, 185, 185);
+  font-size: 16px;
+  margin-top: 50px;
+  transition: 0.5s ease;
+  width: 200px;
+  font-size: smaller;
+  white-space: nowrap;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  border-top: 2px solid rgb(222, 160, 174);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#right {
+  font-family: "Gruppo", Calibri, sans-serif;
+}
+
+i {
+  font-family: FontAwesome;
+}
+
+a {
+  color: #333;
+}
+
+/* HEADER --------------------------------------- */
+.hero {
+  background: linear-gradient(
+    rgba(169, 69, 107, 0.877),
+    rgba(247, 200, 159, 0.851)
+  );
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 30px 20px 30px;
+  color: peachpuff;
+  text-align: center;
+  max-width: 200px;
+}
+
+/* .hero h1 {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 40px;
+} */
+
+.hero h2 {
+  color: rgba(255, 218, 185, 0.756);
+  margin-bottom: 0;
+}
+
+.hero h3 {
+  color: rgba(255, 218, 185, 0.564);
+  margin-top: 5px;
+}
+
+.portrait {
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  width: auto;
+  height: 200px;
+}
+
+#locationIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#earth {
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+#iconContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+#iconContainer a {
+  color: peachpuff;
+  transition: 0.5s ease;
+}
+
+#iconContainer a:hover {
+  transform: scale(1.3);
+}
+
+/* ABOUT ME ------------------------------------- */
+#about {
+  border-top: none;
+}
+
+.tagline {
+  margin: 10px;
+  font-style: italic;
+  color: rgb(112, 50, 75);
+  text-align: center;
+}
+
+#innerBox {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+}
+
+#innerBox button a {
+  text-decoration: none;
+}
+
+/* TOOLBOX -------------------------------------- */
+#toolIconsDiv {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: #333;
+}
+
+#toolIconsDiv i {
+  font-size: 3em;
+}
+
+.toolIcon {
+  height: 3em;
+}
+
+.tool {
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  white-space: nowrap;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tool p {
+  display: block;
+  text-align: center;
+}
+
+/* RECENT WORK ---------------------------------- */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(auto, 300px);
+  column-gap: 30px;
+  row-gap: 50px;
+  padding: 20px;
+  transition: max-height 0.2s ease out;
+}
+
+#fullPortfolio {
+  margin-top: 30px;
+}
+
+.collapsed {
+  display: none;
+  overflow: none;
+}
+
+.test {
+  padding: 0 18px;
+  background-color: #f1f1f1;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.thumbnail {
+  opacity: 1;
+  display: block;
+  height: 300px;
+  width: 400px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle a {
+  color: rgb(242, 227, 227);
+  text-decoration: none;
+}
+
+.imgContainer:hover .thumbnail {
+  opacity: 0.3;
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.viewButton {
+  background-color: rgb(125, 70, 85);
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: 1px solid rgb(169, 69, 107);
+}
+
+h4,
+p {
+  margin: 5px 0 0 0;
+}
+
+/* #collapsibleBtn {
+  padding: 0;
+  white-space: nowrap;
+} */
+
+/* GET IN TOUCH --------------------------------- */
+/* #contactContainer {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  font-family: "Gruppo", Calibri, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#left {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: 20px 200px auto;
+  column-gap: 5px;
+  row-gap: 10px;
+}
+
+#message {
+  grid-column: 1 / 3;
+}
+
+#sendBtn {
+  display: block;
+  margin-top: 10px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactIcon {
+  display: flex;
+  gap: 10px;
+}
+
+#right i {
+  font-size: 1.5em;
+}
+
+#earth {
+  vertical-align: middle;
+  font-size: 1.5em;
+} */
+
+/* FOOTER --------------------------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  padding: 10px;
+  background: linear-gradient(
+    to top,
+    rgba(250, 103, 137, 0.742),
+    rgba(249, 211, 178, 0.769)
+  );
+  margin-top: 100px;
+}
+
+footer a i {
+  transition: 1s ease;
+}
+
+footer a i:hover {
+  transform: rotate(360deg);
+  /* transform: scale(1.2); */
+}
+
+#altFooter {
+  display: none;
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES -------------------------------- */
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(auto, 300px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hidden {
+    display: none !important;
+    overflow: hidden !important;
+  }
+
+  #altFooter {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    padding: 0px;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+
+  .hero {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    max-width: 100%;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(auto, 300px);
+  }
+
+  #contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rwd-break {
+    display: none;
+  }
+}
+
+/* for iPhone */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    /* background: red; */
+  }
+
+  .hero {
+    max-width: 100%;
+  }
+
+  #locationIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #innerBox {
+    width: 100%;
+  }
+
+  #toolbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  #toolIconsDiv {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    color: #333;
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thumbnail {
+    width: 75%;
+    height: auto;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
