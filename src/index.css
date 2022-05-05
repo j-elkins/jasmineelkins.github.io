@@ -1,14 +1,50 @@
-/* GENERAL ------------------------------------ */
+/* FONTS ---------------------------------------------------------------------- */
+@font-face {
+  font-family: "Gruppo";
+  src: local("Gruppo"),
+    url(./assets/fonts/Gruppo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Header";
+  src: local("Header"),
+    url(./assets/fonts/FabulousRabbit-BWl73.ttf) format("truetype");
+}
+
+/* COLOR VARIABLES ------------------------------------------------------------ */
+:root {
+  --dark-text: #333;
+  --light-text: peachpuff;
+}
+
+/* GENERAL ------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
-  background: rgb(249, 227, 204);
+  background: rgb(249, 223, 201);
   margin: 0;
-  color: #333;
+  color: var(--dark-text);
   font-family: "Gruppo", Calibri, sans-serif;
 }
 
-h1 {
+header h1,
+header h2 {
   text-align: center;
+  font-family: "Header", Calibri, sans-serif;
+  letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 1.7rem;
 }
 
 main {
@@ -20,17 +56,35 @@ button {
   border: 3px solid rgb(244, 234, 219);
   border-radius: 11px;
   font-family: "Gruppo", Calibri, sans-serif;
-  background: rgb(240, 185, 185);
-  font-size: 16px;
+  background: rgba(198, 121, 150, 0.683);
+  font-size: 15px;
   margin-top: 50px;
   transition: 0.5s ease;
-  width: 200px;
-  font-size: smaller;
   white-space: nowrap;
 }
 
 button:hover {
   transform: scale(1.1);
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+/* .pageContainer {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  justify-content: center;
+} */
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
@@ -47,50 +101,59 @@ button:hover {
   font-family: "Gruppo", Calibri, sans-serif;
 }
 
-i {
-  font-family: FontAwesome;
-}
-
 a {
-  color: #333;
+  color: var(--dark-text);
 }
 
-/* HEADER --------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
 .hero {
-  background: linear-gradient(
-    rgba(169, 69, 107, 0.877),
-    rgba(247, 200, 159, 0.851)
-  );
+  background: linear-gradient(rgba(169, 69, 107, 0.85), rgb(245, 215, 190));
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 30px 20px 30px;
-  color: peachpuff;
+  color: var(--light-text);
   text-align: center;
   max-width: 200px;
+  max-height: 100%;
 }
 
-/* .hero h1 {
-  font-family: "La Belle Aurore", cursive;
-  font-size: 40px;
-} */
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
 
 .hero h2 {
-  color: rgba(255, 218, 185, 0.756);
-  margin-bottom: 0;
+  font-size: 3.5rem;
+  margin: 0;
 }
 
 .hero h3 {
-  color: rgba(255, 218, 185, 0.564);
+  color: rgba(255, 218, 185, 0.9);
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.hero h4 {
+  color: rgba(255, 218, 185, 0.8);
   margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.hero h5 {
+  color: rgba(255, 218, 185, 0.7);
+  margin-top: 5px;
+  font-size: 1.1rem;
 }
 
 .portrait {
   display: inline-block;
-  border: none;
+  border: 2px solid rgba(145, 86, 123, 0.801);
   border-radius: 50%;
+  box-shadow: 0 0 3px rgb(149, 91, 107), 0 0 5px rgba(137, 63, 88, 0.859);
   width: auto;
-  height: 200px;
+  height: 230px;
+  margin: 20px;
 }
 
 #locationIcon {
@@ -98,23 +161,19 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-
-#earth {
-  vertical-align: middle;
-  font-size: 1.5em;
+  color: rgba(255, 218, 185, 0.6);
 }
 
 #iconContainer {
   display: flex;
   gap: 20px;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-top: 50px;
 }
 
 #iconContainer a {
-  color: peachpuff;
+  color: rgba(255, 218, 185, 0.6);
   transition: 0.5s ease;
 }
 
@@ -122,7 +181,7 @@ a {
   transform: scale(1.3);
 }
 
-/* ABOUT ME ------------------------------------- */
+/* ABOUT ME ------------------------------------------------------------------- */
 #about {
   border-top: none;
 }
@@ -132,6 +191,7 @@ a {
   font-style: italic;
   color: rgb(112, 50, 75);
   text-align: center;
+  font-size: 1.1rem;
 }
 
 #innerBox {
@@ -144,33 +204,29 @@ a {
   width: 75%;
 }
 
+#innerBox p {
+  font-size: 1.1rem;
+}
+
 #innerBox button a {
   text-decoration: none;
 }
 
-/* TOOLBOX -------------------------------------- */
+/* TOOLBOX ------------------------------------------------------------------- */
 #toolIconsDiv {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px;
-  color: #333;
-}
-
-#toolIconsDiv i {
-  font-size: 3em;
-}
-
-.toolIcon {
-  height: 3em;
+  color: var(--dark-text);
 }
 
 .tool {
   display: inline-flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   white-space: nowrap;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
 }
 
@@ -179,15 +235,23 @@ a {
   text-align: center;
 }
 
-/* RECENT WORK ---------------------------------- */
+/* RECENT WORK ------------------------------------------------------------------- */
+#recentWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(auto, 300px);
-  column-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-template-rows: auto;
+  column-gap: 40px;
   row-gap: 50px;
   padding: 20px;
   transition: max-height 0.2s ease out;
+  width: 100%;
 }
 
 #fullPortfolio {
@@ -203,6 +267,12 @@ a {
   padding: 0 18px;
   background-color: #f1f1f1;
 }
+
+/* .tile {
+  box-shadow: 0 0 3px rgb(182, 71, 104), 0 0 5px rgba(156, 64, 95, 0.859);
+  border-radius: 25px;
+  padding: 10px;
+} */
 
 .imgContainer {
   position: relative;
@@ -251,17 +321,16 @@ a {
   border: 1px solid rgb(169, 69, 107);
 }
 
-h4,
-p {
+.tile h4,
+.tile p {
   margin: 5px 0 0 0;
 }
 
-/* #collapsibleBtn {
-  padding: 0;
-  white-space: nowrap;
-} */
+.tile h4 {
+  font-size: 1.3rem;
+}
 
-/* GET IN TOUCH --------------------------------- */
+/* GET IN TOUCH ------------------------------------------------------------------- */
 /* #contactContainer {
   display: flex;
   flex-direction: row;
@@ -317,7 +386,7 @@ textarea {
   font-size: 1.5em;
 } */
 
-/* FOOTER --------------------------------------- */
+/* FOOTER ------------------------------------------------------------------- */
 .footer {
   display: flex;
   flex-direction: row;
@@ -327,8 +396,8 @@ textarea {
   padding: 10px;
   background: linear-gradient(
     to top,
-    rgba(250, 103, 137, 0.742),
-    rgba(249, 211, 178, 0.769)
+    rgba(250, 103, 137, 0.6),
+    rgba(249, 211, 178, 0.5)
   );
   margin-top: 100px;
 }
@@ -347,15 +416,10 @@ footer a i:hover {
   overflow: hidden;
 }
 
-/* MEDIA QUERIES -------------------------------- */
-@media screen and (max-width: 1200px) {
-  .gridContainer {
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(auto, 300px);
-  }
-}
-
+/* MEDIA QUERIES ------------------------------------------------------------------- */
 @media screen and (min-width: 1000px) {
+  /* switch to top header / vertical alignment */
+
   .hidden {
     display: none !important;
     overflow: hidden !important;
@@ -372,26 +436,68 @@ footer a i:hover {
     width: 100%;
     margin-top: 100px;
   }
+
+  .gridContainer {
+    /* grid-template-columns: repeat(1, 400px); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    grid-template-rows: auto;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-  body {
+  .pageContainer {
     flex-direction: column;
   }
 
+  /* HEADER ----------------------- */
   .hero {
     max-width: 100%;
+    height: 25%;
+    background: linear-gradient(
+      rgba(169, 69, 107, 0.85),
+      rgba(247, 200, 159, 0.7)
+    );
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 30px 20px 30px;
+    color: var(--light-text);
+    text-align: center;
+    max-height: 100%;
+  }
+
+  .hero h3 {
+    color: rgba(255, 218, 185);
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  .hero h4 {
+    color: rgba(255, 218, 185, 0.9);
+    margin-top: 5px;
+    font-size: 1.3rem;
+  }
+
+  .hero h5 {
+    color: rgba(255, 218, 185, 0.9);
+    margin-top: 5px;
+    font-size: 1.1rem;
+  }
+
+  #locationIcon {
+    color: rgba(255, 218, 185, 0.8);
+  }
+
+  #iconContainer a {
+    color: rgba(255, 218, 185, 0.9);
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .hero {
-    max-width: 100%;
-  }
-
   .gridContainer {
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(auto, 300px);
+    /* grid-template-columns: repeat(1, 400px); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    grid-template-rows: auto;
   }
 
   #contactContainer {
@@ -416,14 +522,6 @@ footer a i:hover {
     overflow-x: hidden;
   }
 
-  body {
-    /* background: red; */
-  }
-
-  .hero {
-    max-width: 100%;
-  }
-
   #locationIcon {
     display: flex;
     justify-content: center;
@@ -441,12 +539,6 @@ footer a i:hover {
     align-items: center;
     justify-content: center;
     padding: 30px;
-  }
-
-  #toolIconsDiv {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    color: #333;
   }
 
   .tile {
