@@ -152,7 +152,7 @@ a {
   border-radius: 50%;
   box-shadow: 0 0 3px rgb(149, 91, 107), 0 0 5px rgba(137, 63, 88, 0.859);
   width: auto;
-  height: 230px;
+  height: 200px;
   margin: 20px;
 }
 
@@ -286,6 +286,8 @@ a {
   transition: 0.5s ease;
   backface-visibility: hidden;
   border-radius: 10px;
+  border: 1px solid rgba(143, 41, 89, 0.678);
+  box-shadow: 0 0 3px rgb(129, 53, 87);
 }
 
 .middle {
