@@ -16,28 +16,25 @@ function AboutSection(props) {
             places!)
           </p>
           <p>
-            I have a BA in Biology from the
+            I have a BA in Biology from the{" "}
             <a href="https://www.rit.edu" target="_blank" rel="noreferrer">
-              {" "}
               Rochester Institute of Technology
             </a>
-            , a certificate in Responsive Web Design from
+            , a certificate in Responsive Web Design from{" "}
             <a
               href="https://www.freecodecamp.org"
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
               FreeCodeCamp
             </a>
             , and in June 2022 I will graduate from the Software Engineering
-            program at
+            program at{" "}
             <a
               href="https://flatironschool.com"
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
               Flatiron School
             </a>
             .
