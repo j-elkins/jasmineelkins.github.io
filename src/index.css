@@ -332,6 +332,11 @@ a {
   font-size: 1.3rem;
 }
 
+.tile h5 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
 /* GET IN TOUCH ------------------------------------------------------------------- */
 /* #contactContainer {
   display: flex;

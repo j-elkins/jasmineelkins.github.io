@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Project({ project }) {
   return (
@@ -19,6 +19,7 @@ function Project({ project }) {
           </div>
         </div>
         <h4>{project.title}</h4>
+        <h5>{project.languages}</h5>
         <p>{project.description}</p>
       </div>
     </>
