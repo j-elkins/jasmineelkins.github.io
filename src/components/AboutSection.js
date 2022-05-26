@@ -16,7 +16,7 @@ function AboutSection(props) {
             places!)
           </p>
           <p>
-            I have a BA in Biology from the{" "}
+            I have a BS in Biology from the{" "}
             <a href="https://www.rit.edu" target="_blank" rel="noreferrer">
               Rochester Institute of Technology
             </a>
@@ -28,8 +28,8 @@ function AboutSection(props) {
             >
               FreeCodeCamp
             </a>
-            , and in June 2022 I will graduate from the Software Engineering
-            program at{" "}
+            , and in June 2022 I will graduate from the Full-Stack Software
+            Engineering program at{" "}
             <a
               href="https://flatironschool.com"
               target="_blank"
@@ -40,17 +40,17 @@ function AboutSection(props) {
             .
           </p>
           <p>
-            Things I'm passionate about: rock climbing, painting,
-            sustainability, learning new languages, dancing, and traveling. In
-            2019 I left my career as a chemist and bought an old Sprinter van.
-            After learning everything from construction to electrical systems
-            and building my van into a tiny home, I spent a year living on the
-            road, traveling the country from coast to coast.
+            Things I'm passionate about: sustainability, women's health, rock
+            climbing, painting, learning new languages, dancing, and traveling.
+            In 2019 I left my career as a chemist and bought an old Sprinter
+            van. After learning everything from construction to electrical
+            systems and building my van into a tiny home, I spent a year living
+            on the road, traveling solo from coast to coast.
           </p>
           <p>
             I'm currently based in NYC and looking for an internship or junior
-            role to support a creative team while further developing my coding
-            and design skills.
+            role to support a driven, creative team while further developing my
+            programming skills.
           </p>
           {/* 
            <p>
