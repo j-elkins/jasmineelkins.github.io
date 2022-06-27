@@ -1,6 +1,29 @@
 import React from "react";
 
 function Project({ project }) {
+  const linksToDisplay = project.links.map((link, index) => {
+    return index !== 0 ? (
+      <a
+        href={link.url}
+        target="_blank"
+        rel="noreferrer"
+        key={link.text}
+        className="projectLink"
+      >
+        | {"\u00A0"} {link.text}
+      </a>
+    ) : (
+      <a
+        href={link.url}
+        target="_blank"
+        rel="noreferrer"
+        key={link.text}
+        className="projectLink"
+      >
+        {link.text}
+      </a>
+    );
+  });
   return (
     <>
       <div className="tile">
@@ -18,7 +41,10 @@ function Project({ project }) {
             </div>
           </div>
         </div>
-        <h4>{project.title}</h4>
+        <span className="titleInfo">
+          <h4>{project.title}</h4>
+          <div className="projectLinksContainer">{linksToDisplay}</div>
+        </span>
         <h5>{project.languages}</h5>
         <p>{project.description}</p>
       </div>

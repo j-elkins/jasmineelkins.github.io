@@ -41,11 +41,11 @@ function AboutSection(props) {
           </p>
           <p>
             Things I'm passionate about: sustainability, women's health, rock
-            climbing, painting, learning new languages, dancing, and traveling.
-            In 2019 I left my career as a chemist and bought an old Sprinter
-            van. After learning everything from construction to electrical
-            systems and building my van into a tiny home, I spent a year living
-            on the road, traveling solo from coast to coast.
+            climbing, painting, learning new languages, dancing, traveling, and
+            technology. In 2019 I left my career as a chemist and bought an old
+            Sprinter van. After learning everything from construction to
+            electrical systems and building my van into a tiny home, I spent a
+            year living on the road, traveling solo from coast to coast.
           </p>
           <p>
             I'm currently based in NYC and looking for an internship or junior

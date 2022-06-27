@@ -254,25 +254,14 @@ a {
   width: 100%;
 }
 
+.gridContainer.hidden {
+  display: none;
+  pointer-events: none;
+}
+
 #fullPortfolio {
   margin-top: 30px;
 }
-
-.collapsed {
-  display: none;
-  overflow: none;
-}
-
-.test {
-  padding: 0 18px;
-  background-color: #f1f1f1;
-}
-
-/* .tile {
-  box-shadow: 0 0 3px rgb(182, 71, 104), 0 0 5px rgba(156, 64, 95, 0.859);
-  border-radius: 25px;
-  padding: 10px;
-} */
 
 .imgContainer {
   position: relative;
@@ -283,21 +272,24 @@ a {
   display: block;
   height: 300px;
   width: 400px;
-  transition: 0.5s ease;
+  transition: 1s ease;
   backface-visibility: hidden;
   border-radius: 10px;
   border: 1px solid rgba(143, 41, 89, 0.678);
   box-shadow: 0 0 3px rgb(129, 53, 87);
 }
 
+.middle:hover {
+}
+
 .middle {
-  transition: 0.5s ease;
-  opacity: 0;
+  transition: 1s ease;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 0;
 }
 
 .middle a {
@@ -328,13 +320,47 @@ a {
   margin: 5px 0 0 0;
 }
 
+.titleInfo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
 .tile h4 {
   font-size: 1.3rem;
 }
 
 .tile h5 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: italic;
+  margin-top: 5px;
+}
+
+.projectLinksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+.projectLinksContainer a {
+  text-decoration: none;
+}
+
+.projectLinksContainer a:hover {
+  /* font-weight: 900; */
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonDiv button {
+  margin: 3em;
 }
 
 /* GET IN TOUCH ------------------------------------------------------------------- */
