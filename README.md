@@ -1,4 +1,4 @@
-Portfolio linking my recent projects on GitHub pages. Originally built in December 2021 using Vanilla JS; rebuilt in May 2022 using ReactJS
+Portfolio containg all of my recent projects. Originally built in December 2021 using Vanilla JS; rebuilt in May 2022 using ReactJS.
 
 Inspired by the Strata template on HTML UP, by @ajlkn
 html5up.net
