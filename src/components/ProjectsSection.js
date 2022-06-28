@@ -4,7 +4,7 @@ import Project from "./Project";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
 function ProjectsSection(props) {
-  const [hideProjects, setHideProjects] = useState(true);
+  const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   const projectsToDisplay = projectsList.map((project) => (
     <Project project={project} key={project.id} />
@@ -13,7 +13,7 @@ function ProjectsSection(props) {
   const priorityProjects = projectsToDisplay.slice(0, 4);
   const hiddenProjects = projectsToDisplay.slice(4);
 
-  const moreProjectsClassName = hideProjects
+  const moreProjectsClassName = showMoreProjects
     ? "gridContainer"
     : "gridContainer hidden";
 
@@ -29,12 +29,12 @@ function ProjectsSection(props) {
       </section>
 
       <div className="buttonDiv">
-        {hideProjects ? (
-          <button onClick={() => setHideProjects(!hideProjects)}>
+        {showMoreProjects ? (
+          <button onClick={() => setShowMoreProjects(!showMoreProjects)}>
             View Full Portfolio {"\u00A0"} <BsChevronUp />
           </button>
         ) : (
-          <button onClick={() => setHideProjects(!hideProjects)}>
+          <button onClick={() => setShowMoreProjects(!showMoreProjects)}>
             View Full Portfolio {"\u00A0"} <BsChevronDown />
           </button>
         )}
