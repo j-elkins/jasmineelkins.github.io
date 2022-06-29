@@ -70,6 +70,7 @@ button:hover {
 .pageContainer {
   display: flex;
   flex-direction: row;
+  position: absolute;
   /* justify-content: center; */
 }
 
@@ -114,8 +115,6 @@ a {
   padding: 30px 30px 20px 30px;
   color: var(--light-text);
   text-align: center;
-  max-width: 200px;
-  max-height: 100%;
 }
 
 .hero h1 {
@@ -124,7 +123,7 @@ a {
 }
 
 .hero h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -451,7 +450,19 @@ footer a i:hover {
 
 /* MEDIA QUERIES ------------------------------------------------------------------- */
 @media screen and (min-width: 1000px) {
-  /* switch to top header / vertical alignment */
+  /* switch from top header / vertical alignment to side bar / horizontal */
+  Header {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+  }
+
+  .contentWrap {
+    width: calc(100vw - 450px);
+    left: 450px;
+    position: relative;
+    /* background: green; */
+  }
 
   .hidden {
     display: none !important;
@@ -465,7 +476,7 @@ footer a i:hover {
     justify-content: center;
     align-items: center;
     position: static;
-    padding: 0px;
+    padding: 10px;
     width: 100%;
     margin-top: 100px;
   }
@@ -496,7 +507,7 @@ footer a i:hover {
     padding: 30px 30px 20px 30px;
     color: var(--light-text);
     text-align: center;
-    max-height: 100%;
+    /* max-height: 100%; */
   }
 
   .hero h3 {

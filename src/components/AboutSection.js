@@ -10,7 +10,7 @@ function AboutSection(props) {
         </h4>
         <div id="innerBox">
           <p id="bio">
-            I love creating beautiful things, and I get excited about bringing
+            I love building beautiful things, and I get excited about bringing
             both the technical and visual aspects of a project to life. I'm
             happiest when I'm learning, creating, and exploring new things (and
             places!)
@@ -28,8 +28,8 @@ function AboutSection(props) {
             >
               FreeCodeCamp
             </a>
-            , and in June 2022 I will graduate from the Full-Stack Software
-            Engineering program at{" "}
+            , and I recently graduated from the Full-Stack Software Engineering
+            program at{" "}
             <a
               href="https://flatironschool.com"
               target="_blank"
@@ -45,7 +45,10 @@ function AboutSection(props) {
             technology. In 2019 I left my career as a chemist and bought an old
             Sprinter van. After learning everything from construction to
             electrical systems and building my van into a tiny home, I spent a
-            year living on the road, traveling solo from coast to coast.
+            year living on the road, traveling solo from coast to coast. While I
+            was on the road I started teaching myself how to code, eventually
+            deciding to enroll in a full-time bootcamp and pursue my dream of
+            becoming a software engineer.
           </p>
           <p>
             I'm currently based in NYC and looking for an internship or junior
@@ -59,7 +62,7 @@ function AboutSection(props) {
               to support a small team while further developing my coding and
               design skills.
             </p> */}
-
+          {/* 
           <button className="btn">
             <a
               href="https://manyroadstohere.blogspot.com"
@@ -67,6 +70,15 @@ function AboutSection(props) {
               rel="noreferrer"
             >
               Follow my journey here
+            </a>
+          </button> */}
+          <button className="btn">
+            <a
+              href="https://drive.google.com/file/d/1TbgMJBCKlwGZ323bVLFnDLE0wx6FqfA0/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Click to view my resume
             </a>
           </button>
         </div>
