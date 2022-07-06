@@ -13,7 +13,7 @@ function Header(props) {
 
       <h1>Hi!</h1>
       <h2>I'm Jasmine</h2>
-      <h3>software engineer</h3>
+      <h3>full-stack developer</h3>
       <h4>scientist, artist, rock climber, explorer</h4>
 
       <div id="locationIcon">
