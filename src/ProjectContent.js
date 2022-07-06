@@ -8,7 +8,7 @@ const projectsList = [
     description: "Custom reading list creator and newsletter generator.",
     date_completed: "May 2022",
     repository: "https://jasmineelkins-forget-me-not.herokuapp.com/",
-    languages: "ReactJS, Ruby, Rails, PostgreSQL, CSS",
+    languages: "ReactJS, Ruby, Rails, ERB, PostgreSQL, CSS",
     links: [
       {
         text: "GitHub",
