@@ -74,7 +74,7 @@ function AboutSection(props) {
           </button> */}
           <button className="btn">
             <a
-              href="https://drive.google.com/file/d/1TbgMJBCKlwGZ323bVLFnDLE0wx6FqfA0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1mZrOEQIQOol1BvQVMM4Z6-dV-p0Uq4G4/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
