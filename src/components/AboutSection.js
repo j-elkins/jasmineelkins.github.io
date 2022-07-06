@@ -16,7 +16,7 @@ function AboutSection(props) {
             places!)
           </p>
           <p>
-            I have a BS in Biology from the{" "}
+            I have a Bachelor of Science in Biology from the{" "}
             <a href="https://www.rit.edu" target="_blank" rel="noreferrer">
               Rochester Institute of Technology
             </a>
