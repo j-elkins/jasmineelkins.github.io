@@ -8,7 +8,11 @@ function Header(props) {
   return (
     <header className="hero">
       <div className="headshot">
-        <img src={headshot} className="portrait" alt="Portrait" />
+        <img
+          src="https://res.cloudinary.com/dbl7owtdh/image/upload/v1657220412/Portfolio%20Images/new_headshot_c44msq.png"
+          className="portrait"
+          alt="Portrait"
+        />
       </div>
 
       <h1>Hi!</h1>

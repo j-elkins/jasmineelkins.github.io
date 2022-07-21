@@ -1,5 +1,26 @@
 const projectsList = [
   {
+    id: 10,
+    title: "Letter Game",
+    image:
+      "https://res.cloudinary.com/dbl7owtdh/image/upload/v1658072678/Portfolio%20Images/letters-game_jpensy.png",
+    alt_text: "Screenshot of Letters Game app",
+    description: "Select adjacent tiles to build words on this 4x4 board.",
+    date_completed: "July 2022",
+    repository: "https://jasmineelkins.github.io/letters-game/",
+    languages: "ReactJS, CSS",
+    links: [
+      {
+        text: "GitHub",
+        url: "https://github.com/jasmineelkins/letters-game",
+      },
+      {
+        text: "Play!",
+        url: "https://jasmineelkins.github.io/letters-game/",
+      },
+    ],
+  },
+  {
     id: 9,
     title: "Forget Me Not",
     image:
